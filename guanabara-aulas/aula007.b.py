@@ -1,5 +1,5 @@
 n1 = int(input('Um valor: '))
-n2 = int(input('Outro valor: '))
+n2 = int(input('Mais um valor valor: '))
 #print('A soma vale {}.'.format(n1+n2))
 s = n1 + n2
 m = n1 * n2

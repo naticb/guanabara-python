@@ -6,17 +6,17 @@
 #30 até 40: Obesidade
 #Acima de 40: Obesidade mórbida
 
-altura = float(input('Digite a altura em metros: '))
 peso = float(input('Digite o peso em kg: '))
+altura = float(input('Digite a altura em metros: '))
 imc = peso / (altura**2)
-
+print('O IMC é {:.1f}'.format(imc))
 if imc < 18.5:
-    print('IMC é {:.2f}, abaixo do peso.'.format(imc))
+    print('Está abaixo do peso.'.format(imc))
 elif imc >= 18.5 and imc < 25:
-    print('IMC é {:.2f}, peso ideal.'.format(imc))
+    print('Está com peso ideal.'.format(imc))
 elif imc >= 25 and imc < 30:
-    print('IMC é {:.2f}, sobrepeso.'.format(imc))
-elif imc >= 30 and imc <= 40:
-    print('IMC é {:.2f}, obesidade.'.format(imc))
+    print('Está em sobrepeso.'.format(imc))
+elif imc >= 30 and imc < 40:
+    print('Está em obesidade.'.format(imc))
 else:
-    print('IMC é {:.2f}, obesidade mórbida'.format(imc))
+    print('Está em obesidade mórbida'.format(imc))

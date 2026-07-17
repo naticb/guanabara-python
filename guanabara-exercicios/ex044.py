@@ -20,7 +20,13 @@ elif pagamento == 2:
     valor = preco*0.95
 elif pagamento == 3:
     valor = preco
+    print('Em duas vezes o valor da parcela será de R${} sem juros.'.format(valor / 2))
+elif pagamento == 4:
+    valor = preco * 1.2
+    parcela = int(input('Quantas parcelas? '))
+    print('Em {} vezes o valor da parcela será de R${:.2f} com juros.'.format(parcela,(valor / parcela)))
 else:
-    valor = preco*1.2
+    valor = '-INVÁLIDO-'
+    print('Opção inválida, tente novamente.')
 
-print('Ok, o preço final do seu produto fica R$ {}!'.format(valor))
+print('O preço final será R$ {}.'.format(valor))

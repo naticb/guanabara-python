@@ -6,15 +6,20 @@
 #Até 20 anos: SENIOR
 #Acima: MASTER
 
-idade = int(input('Qual a sua idade? '))
+from datetime import date
+atual = date.today().year
+ano = int(input('Qual o seu ano de nascimento? '))
+idade = atual - ano
+
+print('Sua idade é {}'.format(idade))
 
 if idade <= 9:
-    print('MIRIM')
+    print('Categoria: MIRIM')
 elif idade <= 14:
-    print('INFANTIL')
+    print('Categoria: INFANTIL')
 elif idade <= 19:
-    print('JUNIOR')
+    print('Categoria: JUNIOR')
 elif idade <= 20:
-    print('SENIOR')
+    print('Categoria: SENIOR')
 else:
-    print('MASTER')
+    print('Categoria: MASTER')

@@ -4,13 +4,13 @@
 a = int(input('Digite o primeiro termo: '))
 r = int(input('Digite a razão: '))
 c = 1
-while c <= 10:
-    a += r
-    c += 1
-    print(a)
+total = 0
+d = 10
+while d != 0:
+    total += d
+    while c <= total:
+        print(a)
+        a += r
+        c += 1
     d = int(input('Quer ver mais termos? Digite a quantidade: '))
-    if d != 0:
-        while c <= d:
-            a += r
-            print(a)
-            c += 1
+print('Fim! Total: {} termos mostrados.'.format(total))
